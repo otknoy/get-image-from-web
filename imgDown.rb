@@ -41,22 +41,3 @@ ARGV.each do |http|
     save_file(uri, out_dir) if uri =~ /.*\.(?:jpg|jpeg|png)/
   end
 end
-
-# ARGV.each do |http|
-#   open(http) do |uri|
-#     p uri
-
-#     uri.read.scan(/(?:[-_.!~*\'\(\)\w;\/?:\@&=+\$,%#]+\.(?:jpg|jpeg|gif|png))/) do |img_uri|
-#       img_uri = 'h' + img_uri if img_uri =~ /\Attp:/
-
-#       begin
-#         img_uri = uri.base_uri.merge(img_uri).to_s
-#       rescue URI::InvalidURIError
-#         p $!
-#         next
-#       else
-#         save_file(img_uri, out_dir)
-#       end
-#     end
-#   end
-# end
