@@ -1,0 +1,7 @@
+This program is a ruby script downloading image files from Any Web site.
+
+How to use
+ ruby imgDonw.rb [URI]
+
+Downloaded files will be saved in "data directory".
+Unless "data directory" exist, it is created automatically.
