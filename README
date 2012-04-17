@@ -1,4 +1,4 @@
-This program is a ruby script downloading image files from Any Web site.
+This program is a ruby script downloading image files from any Web site.
 
 How to use
  ruby imgDonw.rb [URI]
